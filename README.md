@@ -4,9 +4,8 @@ This is a chrome plugin load at runtime of selenium webdriver to find out outsta
 
 Usage to code inside the webdriver
 
-new WebDriverWait(DriverManager.getDriver(), 10)
-			.until(new ExpectedCondition<Boolean>() {
-
+                       new WebDriverWait(DriverManager.getDriver(), 10)
+			  .until(new ExpectedCondition<Boolean>() {
 				public Boolean apply(WebDriver input) {
 					((JavascriptExecutor) input)
 					.executeScript("var outReqCount = null;");
